@@ -1,0 +1,19 @@
+Dump of assembler code for function main:
+0x00401460 <+0>: push %ebp
+0x00401461 <+1>: mov %esp,%ebp
+0x00401463 <+3>: and $0xfffffff0,%esp
+0x00401466 <+6>: sub $0x10,%esp
+0x00401469 <+9>: call 0x4019e0 <__main>
+0x0040146e <+14>: movl $0x2,0xc(%esp) //explain   //moves 0x2 hex number to esp+0xc memory location
+0x00401476 <+22>: movl $0x2c,0x8(%esp) //explain  //movers 0x2c hex number to esp+0x8 memory location
+0x0040147e <+30>: movl $0x242,0x4(%esp) //explain //moves  0x242 hex number to eso+0x4 memory location
+0x00401486 <+38>: mov 0x8(%esp),%eax //explain  // moves hex number located in esp+0x8 memory location to eax register
+0x0040148a <+42>: imul 0x4(%esp),%eax //explain //signed multiplication eax * data stored in (esp+0x4) memory
+=> 0x0040148f <+47>: mov %eax,%edx //explain   //moves content of eax to edx
+0x00401491 <+49>: mov 0xc(%esp),%eax //explain //moves contents of esp+0xc to eax
+0x00401495 <+53>: add %edx,%eax //explain   //add contents of eax and edx and store in eax
+0x00401497 <+55>: mov %eax,(%esp)
+0x0040149a <+58>: mov $0x0,%eax
+0x0040149f <+63>: leave
+0x004014a0 <+64>: ret
+End of assembler dump.

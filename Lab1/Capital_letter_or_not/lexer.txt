@@ -1,0 +1,22 @@
+
+%{
+   int count=0;
+%}
+
+%%
+[A-Z] {printf("%s is a capital letter\n", yytext);}
+. {printf("%s There is no capital letter\n", yytext); }
+\n {return 0;}
+%%
+
+int yywrap()
+{
+}
+
+int main()
+{
+ yylex();
+ 
+
+ return 0;
+}

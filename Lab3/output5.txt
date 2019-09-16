@@ -1,0 +1,24 @@
+Sub SUB
+ExampleProg ID
+Dim DIM
+b ID
+as AS
+Boolean BOOLEAN
+b ID
+= ASSIGN
+True TRUE
+Dim DIM
+s ID
+as AS
+String STRING
+s ID
+= ASSIGN
+"Truth value of Bool is" LITERAL
+& AND
+b ID
+MsgBox MSGBOX
+( LP
+s ID
+) RP
+End END
+Sub SUB

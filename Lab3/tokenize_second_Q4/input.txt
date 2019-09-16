@@ -1,0 +1,11 @@
+Uses Crt;
+Var YN : String;
+Begin
+Writeln('Y(YES) or N(NO)?');
+Repeat
+YN := Readkey;
+If YN = 'y' Then Halt;
+If YN = 'n' Then Writeln('Why not? Exiting...');
+Delay(1800);
+Until (YN = 'y') OR (YN = 'n');
+End.
